@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+.Header{
+    height: 100vh;
+   /* background:rgba(189, 185, 148, 0.4)*/
+   background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+
+}
+.video-backdround{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    
+}
+@media(min-aspect-ratio:16/9){
+    .video-backdroun{
+        width: 100%;
+        height: auto;
+
+    }
+
+}
+@media(max-aspect-ratio:16/9){
+    .video-backdroun{
+        width: auto;
+        height: 100%;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container
+{
+    height: 100vh;
+    width: 100%;
+ 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.hero
+{
+    width: 38%;
+    height: 280px;
+    position: absolute;
+    top: 38px;
+    left: 100px;
+}
+.card
+{
+    width: 100%;
+    height: 100%;
+    background: rgb(71, 122, 86);
+    color: #f6fcff;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: -5px -5px 0px 5px #e6edfd;
+    cursor: pointer;
+    position: absolute;
+   transition: 1s;
+   
+}
+.col
+{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-image img
+{
+    width: 85%;
+
+}
+h3
+{
+    font-weight: 100;
+}
+h1
+{
+    margin: 15px 0;
+    font-size: 18px;
+}
+.card:nth-child(1)
+{
+    transform: perspective(1200px) rotateX(-1.98deg) rotateY(20.99deg) scale3d(1,1,1);
+}
+.card:nth-child(2)
+{
+    transform: perspective(1200px)  translate(45%,40%) rotateX(-1.98deg) rotateY(20.99deg) scale3d(1,1,1);
+}
+.card:nth-child(3)
+{
+    transform: perspective(1200px)  translate(90%,80%) rotateX(-1.98deg) rotateY(20.99deg) scale3d(1,1,1);
+}
+.card:nth-child(4)
+{
+    transform: perspective(1200px) translate(135%,120%) rotateX(-1.98deg) rotateY(20.99deg) scale3d(1,1,1);
+}
+
+.card:nth-child(1):hover,
+.card:nth-child(2):hover,
+.card:nth-child(3):hover,
+.card:nth-child(4):hover
+{
+    width: 105%;
+    height: 300px;
+    z-index: 1;
+    box-shadow: 0 0 0 5px #e6edfd;
+}
+.card:nth-child(1):hover
+{
+    transform: rotateX(0deg) rotateY(0deg) scale3d(1,1,1);
+}
+.card:nth-child(2):hover
+{
+    transform: rotateX(0deg) rotateY(0deg)  translate(45%,40%) scale3d(1,1,1);
+}
+.card:nth-child(3):hover
+{
+    transform: rotateX(0deg) rotateY(0deg) translate(88%,78%) scale3d(1,1,1);
+}
+.card:nth-child(4):hover
+{
+    transform: rotateX(0deg) rotateY(0deg) translate(130%,115%) scale3d(1,1,1);
+}
