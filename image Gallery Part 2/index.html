@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary Part 2</title>
+    <link rel="stylesheet" href="gallery_2.css">
+
+    <link rel="stylesheet" href="elastic-slider.css">
+    <script src="elastic-slider.js"></script>
+
+    <script src="snap.svg-min.js"></script>
+
+    <style>
+        .clipped-left {
+            -webkit-clip-path: url(#clipped-left);
+            clip-path: url(#clipped-left);
+        }
+        .clipped-right {
+            -webkit-clip-path: url(#clipped-right);
+            clip-path: url(#clipped-right);
+        }
+    </style>
+
+</head>
+<body>
+
+    <section class="Header">
+        <video autoplay loop class="video-backdround" muted plays-inline> 
+            <source src="background  for youtube videos, background music for videos, free, video backgrou.mp4" type="video/mp4">
+    
+            </video>
+            
+    <div class="hero">
+        <div class="elastic-slider">
+            <div id="image1"></div>
+            <div id="image2"></div>
+            <div id="image3"></div>
+            <div id="image4"></div>
+            <div id="image5"></div>
+            
+          
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        new ElasticSlider('.elastic-slider');
+    </script>
+
+
+
+
+
+
+    
+</body>
+</html>

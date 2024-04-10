@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.Header{
+    height: 100vh;
+   /* background:rgba(189, 185, 148, 0.4)*/
+
+}
+.video-backdround{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+@media(min-aspect-ratio:16/9){
+    .video-backdroun{
+        width: 100%;
+        height: auto;
+
+    }
+
+}
+@media(max-aspect-ratio:16/9){
+    .video-backdroun{
+        width: auto;
+        height: 100%;
+        
+    }
+
+}
+.hero
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#image1
+{
+    background-image: url(74.jpg);
+}
+#image2
+{
+    background-image: url(77.jpg);
+}
+#image3
+{
+    background-image: url(85.jpg);
+}
+#image4
+{
+    background-image: url(114.jpg);
+}
+#image5
+{
+    background-image: url(96.jpg);
+}
+
+
+
+.hero .elastic-slider
+{
+    cursor: grab;
+    width: 800px;
+    height: 550px;
+
+}
+.hero .elastic-slider div
+{
+    background-size: cover;
+    background-position: center;
+    
+}
